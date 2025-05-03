@@ -1,0 +1,23 @@
+.profile {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  margin-top: 36px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile {
+    max-width: 1440px;
+  }
+}
