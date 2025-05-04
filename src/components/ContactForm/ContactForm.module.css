@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #0106f5;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  /* width: 350px; */
+}
