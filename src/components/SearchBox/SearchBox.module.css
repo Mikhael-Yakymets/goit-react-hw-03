@@ -1,6 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
 .input {
-  margin-bottom: 12px;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   font-size: 14px;
   padding: 4px;
 }

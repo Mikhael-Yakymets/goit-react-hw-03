@@ -2,7 +2,7 @@ import css from './SearchBox.module.css';
 
 const SearchBox = ({ value, onFilter }) => {
   return (
-    <label>
+    <label className={css.wrapper}>
       <input
         className={css.input}
         type="text"

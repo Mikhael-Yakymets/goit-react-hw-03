@@ -33,13 +33,35 @@ const ContactForm = ({ onAdd }) => {
       onSubmit={handleSubmit}
     >
       <Form className={css.form}>
-        <label htmlFor={`${fieldId}-name`}>Name</label>
-        <Field type="text" name="name" id={`${fieldId}-name`} />
-        <ErrorMessage name="name" />
-        <label htmlFor={`${fieldId}-number`}>Number</label>
-        <Field type="text" name="number" id={`${fieldId}-number`} />
-        <ErrorMessage name="number" />
-        <button type="submit">Add contact</button>
+        <div className={css.fieldWrapper}>
+          <label htmlFor={`${fieldId}-name`}>Name</label>
+          <Field
+            className={css.input}
+            type="text"
+            name="name"
+            id={`${fieldId}-name`}
+          />
+          <ErrorMessage name="name">
+            {(msg) => <div className={css.error}>{msg}</div>}
+          </ErrorMessage>
+        </div>
+
+        <div className={css.fieldWrapper}>
+          <label htmlFor={`${fieldId}-number`}>Number</label>
+          <Field
+            className={css.input}
+            type="text"
+            name="number"
+            id={`${fieldId}-number`}
+          />
+          <ErrorMessage name="number">
+            {(msg) => <div className={css.error}>{msg}</div>}
+          </ErrorMessage>
+        </div>
+
+        <button className={css.button} type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
